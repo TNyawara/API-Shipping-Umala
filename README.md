@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/TNyawara/API-Shipping-Umala/master/shipping/jet-shipping/public/img/delivery-truck.svg" width="400"></p>
+
 # API-Shipping-Umala
 A  freight forwarder web application that arranges transportation of goods and acts as an intermediary between a shipper and the different transportation services
 
