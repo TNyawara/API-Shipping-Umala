@@ -85,6 +85,7 @@ class quoteController extends Controller
         //
         $quot = quote::find($id);
         $quot->payment = $request->payment;
+        $quot->status = 'ONGOING';
         $quot->save();
         return response()->json('success', 201);
     }

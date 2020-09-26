@@ -34,29 +34,11 @@ class Quotes extends Migration
             $table->string('locations');
         });
         DB::table('locations')->insert(
-            array(
-                'locations' => 'NAIROBI'
-            )
-        );
-        DB::table('locations')->insert(
-            array(
-                'locations' => 'KISUMU'
-            )
-        );
-        DB::table('locations')->insert(
-            array(
-                'locations' => 'MOMBASA'
-            )
-        );
-        DB::table('locations')->insert(
-            array(
-                'locations' => 'GARISSA'
-            )
-        );
-        DB::table('locations')->insert(
-            array(
-                'locations' => 'ENTEBBE'
-            )
+            ['locations' => 'NAIROBI'],
+            ['locations' => 'KISUMU'],
+            ['locations' => 'MOMBASA'],
+            ['locations' => 'GARISSA'],
+            ['locations' => 'ENTEBBE'],
         );
     }
 

@@ -25,4 +25,10 @@ class showLocations extends Controller
     $completedQuotes = DB::table('quotes')->where('status','COMPLETED')->take(5)->get();
     return view('welcome', ['locations' => $locs,'completedQuotes' => $completedQuotes,'clients' => $clients]);
   }
+  public function createLocation(Request $newLocation){
+    DB::table('locations')->insert(
+        ['locations' => $newLocation->location]
+    );
+    return response()->json('success', 201);
+  }
 }
