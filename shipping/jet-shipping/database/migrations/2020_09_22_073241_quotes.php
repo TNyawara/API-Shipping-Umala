@@ -35,9 +35,17 @@ class Quotes extends Migration
         });
         DB::table('locations')->insert(
             ['locations' => 'NAIROBI'],
+        );
+        DB::table('locations')->insert(
             ['locations' => 'KISUMU'],
+        );
+        DB::table('locations')->insert(
             ['locations' => 'MOMBASA'],
+        );
+        DB::table('locations')->insert(
             ['locations' => 'GARISSA'],
+        );
+        DB::table('locations')->insert(
             ['locations' => 'ENTEBBE'],
         );
     }
